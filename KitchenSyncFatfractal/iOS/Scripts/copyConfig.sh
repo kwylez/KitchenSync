@@ -1,0 +1,14 @@
+#!/bin/sh
+
+echo "$SRCROOT and $PROJECT_DIR/KitchenSyncFatFractalTests/"
+
+PATH_TO_TESTS="$PROJECT_DIR/KitchenSyncFatFractalTests"
+FATFRACTAL_CONFIGURATION_EXAMPLE="$PATH_TO_TESTS/FatFractalConfiguration.plist.sample"
+FATFRACTAL_CONFIGURATION="$PATH_TO_TESTS/FatFractalConfiguration.plist"
+
+if [ -f $FATFRACTAL_CONFIGURATION_EXAMPLE ]; then
+  cp $FATFRACTAL_CONFIGURATION_EXAMPLE $FATFRACTAL_CONFIGURATION
+else
+  echo "$FATFRACTAL_CONFIGURATION_EXAMPLE not found!"
+  exit 1
+fi

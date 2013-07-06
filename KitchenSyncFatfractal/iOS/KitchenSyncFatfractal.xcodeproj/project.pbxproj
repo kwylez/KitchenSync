@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		017C2249176168AB006E001A /* FatFractalConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 017C2246176168AB006E001A /* FatFractalConfigurator.m */; };
-		017C224A176168AB006E001A /* FatFractalConfiguration.plist.sample in Resources */ = {isa = PBXBuildFile; fileRef = 017C2247176168AB006E001A /* FatFractalConfiguration.plist.sample */; };
-		017C224B176168AB006E001A /* FatFractalConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 017C2248176168AB006E001A /* FatFractalConfiguration.plist */; };
+		017C224A176168AB006E001A /* FatFractalConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 017C2247176168AB006E001A /* FatFractalConfiguration.plist */; };
 		0A22FC7A17381C7B00735D34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A22FC7917381C7B00735D34 /* UIKit.framework */; };
 		0A22FC7C17381C7B00735D34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A22FC7B17381C7B00735D34 /* Foundation.framework */; };
 		0A22FC7E17381C7B00735D34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A22FC7D17381C7B00735D34 /* CoreGraphics.framework */; };
@@ -52,8 +51,7 @@
 /* Begin PBXFileReference section */
 		017C2245176168AB006E001A /* FatFractalConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatFractalConfigurator.h; sourceTree = "<group>"; };
 		017C2246176168AB006E001A /* FatFractalConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatFractalConfigurator.m; sourceTree = "<group>"; };
-		017C2247176168AB006E001A /* FatFractalConfiguration.plist.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FatFractalConfiguration.plist.sample; sourceTree = "<group>"; };
-		017C2248176168AB006E001A /* FatFractalConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FatFractalConfiguration.plist; sourceTree = "<group>"; };
+		017C2247176168AB006E001A /* FatFractalConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FatFractalConfiguration.plist; sourceTree = "<group>"; };
 		0A22FC7617381C7B00735D34 /* KitchenSyncFatfractal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchenSyncFatfractal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A22FC7917381C7B00735D34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0A22FC7B17381C7B00735D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -180,8 +178,7 @@
 			children = (
 				017C2245176168AB006E001A /* FatFractalConfigurator.h */,
 				017C2246176168AB006E001A /* FatFractalConfigurator.m */,
-				017C2247176168AB006E001A /* FatFractalConfiguration.plist.sample */,
-				017C2248176168AB006E001A /* FatFractalConfiguration.plist */,
+				017C2247176168AB006E001A /* FatFractalConfiguration.plist */,
 				0A22FCAC17381C7B00735D34 /* KitchenSyncFatfractalTests.h */,
 				0A22FCAD17381C7B00735D34 /* KitchenSyncFatfractalTests.m */,
 				0A22FCA717381C7B00735D34 /* Supporting Files */,
@@ -237,6 +234,7 @@
 				0A22FC9A17381C7B00735D34 /* Sources */,
 				0A22FC9B17381C7B00735D34 /* Frameworks */,
 				0A22FC9C17381C7B00735D34 /* Resources */,
+				01F1775D1788BD8500D5F8C0 /* Copy FatFractal Config */,
 				0A22FC9D17381C7B00735D34 /* ShellScript */,
 			);
 			buildRules = (
@@ -295,14 +293,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A22FCAB17381C7B00735D34 /* InfoPlist.strings in Resources */,
-				017C224A176168AB006E001A /* FatFractalConfiguration.plist.sample in Resources */,
-				017C224B176168AB006E001A /* FatFractalConfiguration.plist in Resources */,
+				017C224A176168AB006E001A /* FatFractalConfiguration.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01F1775D1788BD8500D5F8C0 /* Copy FatFractal Config */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy FatFractal Config";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# this is for future development\n#\"$PROJECT_DIR/Scripts/copyConfig.sh\"";
+		};
 		0A22FC9D17381C7B00735D34 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
