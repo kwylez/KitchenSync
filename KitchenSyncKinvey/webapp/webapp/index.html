@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function httpsRedirect() {
+                var httpURL = window.location.hostname + window.location.pathname;
+                console.log(httpURL);
+                if(window.location.href.match('localhost')) {
+                    console.log("https://" + window.location.hostname + ":" + "8443" + window.location.pathname);
+                    window.location = "https://" + window.location.hostname + (window.location.port ? ":" + window.location.port : "");
+                } else window.location = "https://" + httpURL;
+            }
+            console.log(window.location.href);
+            if(!window.location.href.match('^https://'))
+                httpsRedirect();
+        </script>
+        <link rel="stylesheet" href="css/qunit-1.10.0.css"/>
+        <script src="js/qunit-1.10.0.js"></script>
+        <script src="js/kinvey-js-0.9.15.min.js"></script>
+        <script src="js/models.js"></script>
+        <script src="js/KitchenSyncTests.js"></script>
+    </head>
+    <body>
+        <h1 id="baseurl"></h1>
+        <h2 id="backend" onclick = "toggleBackend()">Click to change backend to secure or open</h2>
+        <p id="explain"></p>
+        <div id="qunit"></div>
+    </body>
+    <script type='text/javascript'>
+        var baseEl = document.getElementById('baseurl');
+        var re = /\/index.html$/;
+        var app = window.location.pathname.replace(re, "");
+        var appName = app.slice(1);
+        var host = window.location.hostname + (window.location.port ? ":" + window.location.port : "");
+        baseEl.innerHTML = host + app;
+        var explainEl = document.getElementById('explain');
+        explainEl.innerHTML = "Application: " + appName + " is running on " + host;
+        window.document.title = "FatFractal KitchenSync HTML5/JS Test served by " + appName + " backend"       
+    </script>
+    <script type='text/javascript'>
+        setUpKitchenSyncTests();
+    </script>
+</html>
+

@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/qunit-1.10.0.css"/>
+    <!--
+      *************************************
+      STACKMOB JS SDK DEPENDENCIES
+      Include these in your pages where you want to use the StackMob js sdk
+      *************************************
+    -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/stackmob-js-0.9.1-bundled-min.js"></script>
+    <!--
+      *************************************
+      INITIALIZE THE JS SDK BELOW
+      Copy/Paste the init method from:
+      https://dashboard.stackmob.com/sdks/js/config
+      *************************************
+    -->
+    <script type="text/javascript">
+      function httpsRedirect() {
+        var httpURL = window.location.hostname + window.location.pathname;
+        console.log(httpURL);
+        if(window.location.href.match('localhost')) {
+           console.log("https://" + window.location.hostname + ":" + "8443" + window.location.pathname);
+           window.location = "https://" + window.location.hostname + (window.location.port ? ":" + window.location.port : "");
+        } else window.location = "https://" + httpURL;
+      }
+      console.log(window.location.href);
+      if(!window.location.href.match('^https://'))
+        httpsRedirect();
+    </script>
+    <script type="text/javascript">
+      var be = sessionStorage.getItem("backend");
+      if (be && be == "open") {
+        StackMob.init({
+          publicKey:'b993d420-e60b-4f81-b551-b1c116a0b93a',
+          apiVersion:0
+        });
+      } else {
+        StackMob.init({
+          publicKey:'64936eb2-a6e8-4139-93f6-045ca78c8d8b',
+          apiVersion:0
+        });
+    	sessionStorage.setItem("backend", "secure");
+      }
+      console.log("backend is now " + sessionStorage.getItem("backend"));
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        setUpKitchenSyncTests();
+      });
+    </script>
+    <script src="js/qunit-1.10.0.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/KitchenSyncTests.js"></script>
+  </head>
+  <body>
+    <h1 id="baseurl"></h1>
+    <h2 id="backend" onclick = "toggleBackend()">Click to change backend to secure or open</h2>
+    <p id="explain"></p>
+    <div id="qunit"></div>
+    <script type='text/javascript'>
+      var baseEl = document.getElementById('baseurl');
+      var re = /\/index.html$/;
+      var app = window.location.pathname.replace(re, "");
+      var appName = app.slice(1);
+      var host = window.location.hostname + (window.location.port ? ":" + window.location.port : "");
+      baseEl.innerHTML = host + app;
+      var explainEl = document.getElementById('explain');
+      explainEl.innerHTML = "Application: " + appName + " is running on " + host;
+      window.document.title = "FatFractal KitchenSync HTML5/JS Test served by " + appName + " backend"       
+    </script>
+  </body>
+</html>
+

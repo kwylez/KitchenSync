@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>SecureApplicationId</key>
+    <string>fY9ovQib3b9MSdUQmowuONsS1UakYc1hAlfVJHq3</string>
+    <key>SecureClientKey</key>
+    <string>LK9sWZTfAvKVvqdpfEWm291Tb9OFS0f85wCWHklS</string>
+    <key>OpenApplicationId</key>
+    <string>dZo6lFDxQgJBd4vz9msg3oxbude3k45ZlsT6Cx6z</string>
+    <key>OpenClientKey</key>
+    <string>cKgSL6rw2Pwhte8JEz0W5bVtQWjf7bBJ61DzwboA</string>
+    <key>UseSecure</key>
+    <true/>
+    <key>ShowLogs</key>
+    <true/>
+  </dict>
+</plist>
