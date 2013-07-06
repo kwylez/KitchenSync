@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SecureApplicationId</key>
+	<string>lGYtdzLWDyYiqMOmhMcJGLDQHqjNnB57</string>
+	<key>SecureURL</key>
+	<string>https://kitchensyncsecure.azure-mobile.net</string>
+	<key>OpenApplicationId</key>
+	<string>clQMKisZZmCtpYtqJhnxlvoKxyGAdz22</string>
+	<key>OpenURL</key>
+	<string>https://kitchensyncopen.azure-mobile.net</string>
+	<key>ShowLogs</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,60 @@
+#
+# Application configuration
+#
+SET ActivateUsersOnReg true
+SET AllowAnonymousGets false
+SET AllowAutoRegistration true
+SET AllowInactiveGets false
+SET AllowNewCollections false
+SET AllowNewMembers false
+SET AllowNewObjectTypes false
+SET AllowSystemUserToLogin true
+SET AndroidPushAuthToken YOUR_ANDROID_AUTH_TOKEN_GOES_HERE
+SET ApplePushKeystorePassword YOUR_KEYSTORE_PASSWORD_GOES_HERE
+SET ApplePushUsingProduction false
+SET CORS https://system.fatfractal.com http://localhost:8080 https://localhost:8443 https://kitchensync.fatfractal.com 
+SET CachingEnabled true
+SET ETaggingEnabled true
+SET LogLevel INFO
+SET MaintainCreatedUpdatedBackReferences false
+SET MaxCacheSize 10000
+SET PasswordMessage Password must be between 8 and 50 characters long, must contain at least one digit, at least one lowercase letter and at least one uppercase letter
+SET PasswordPattern ((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,50})
+SET PasswordValidation false
+SET PushIsInactive true
+SET ReferentialIntegrityActionOnDelete NONE
+SET SessionTimeoutInSeconds 129600
+
+#
+# Object Types
+#
+CREATE OBJECTTYPE FFUser (userName STRING, firstName STRING, lastName STRING, email STRING, active BOOLEAN, authDomain STRING, groups GRABBAG /FFUserGroup, notif_ids GRABBAG /FFNotificationID)
+CREATE ALIAS ON OBJECTTYPE FFUser GRABBAG BackReferences.FFUserGroup.users AS memberOfGroups
+CREATE OBJECTTYPE FFUserGroup (groupName STRING, users GRABBAG /FFUser)
+CREATE OBJECTTYPE FFNotificationID (idType STRING, idValue STRING)
+DROP OBJECTTYPE Foo
+DROP OBJECTTYPE Bar
+CREATE OBJECTTYPE Foo (fooParameter STRING)
+CREATE OBJECTTYPE Bar (barParameter STRING)
+
+#
+# Collection Resources
+#
+
+CREATE COLLECTION /FFUser OBJECTTYPE FFUser
+CREATE COLLECTION /FFUserGroup OBJECTTYPE FFUserGroup
+CREATE COLLECTION /FFNotificationID OBJECTTYPE FFNotificationID
+DROP COLLECTION /Foos
+DROP COLLECTION /Bars
+CREATE COLLECTION /Foos OBJECTTYPE Foo
+CREATE COLLECTION /Bars OBJECTTYPE Bar
+
+#
+# Extension Resources
+#
+CREATE EXTENSION /cleanup AS javascript:require('scripts/KitchenSyncExtensions').cleanup();
+
+#
+# Scheduled Tasks
+#
+

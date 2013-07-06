@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "KitchenSyncSecure": {
+            "applicationId": "fY9ovQib3b9MSdUQmowuONsS1UakYc1hAlfVJHq3", 
+            "masterKey": "t21pUQl4YigskWLu1Vzms2JyQgVkjqysvt4RqMR1"
+        }, 
+        "_default": {
+            "link": "KitchenSyncSecure"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.8"
+    }
+}

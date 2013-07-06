@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>SecureAppKey</key>
+    <string>kid_VPArUQbBtf</string>
+    <key>SecureAppSecrect</key>
+    <string>e4999495a5e346f29dfa75fb723fcfbb</string>
+    <key>SecureMasterSecrect</key>
+    <string>582da5f843344a8e86161ab177d43566</string>
+    <key>OpenAppKey</key>
+    <string>kid_TT-0IZbKn5</string>
+    <key>OpenAppSecrect</key>
+    <string>749e1b6c9ec743d19270bfdb6631a290</string>
+    <key>OpenMasterSecrect</key>
+    <string>ef6c8251d18e4e94b5a37c2a7a4361bf</string>
+    <key>UseSecure</key>
+    <true/>
+    <key>ShowLogs</key>
+    <true/>
+    <key>RunCoreDataTests</key>
+    <false/>
+  </dict>
+</plist>

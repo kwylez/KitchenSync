@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D67CF41788EBB100ED6AE9 /* StackMobConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01D67CF31788EBB100ED6AE9 /* StackMobConfiguration.plist */; };
+		01E17A8A175BA3C30059C0DA /* StackMobConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E17A89175BA3C30059C0DA /* StackMobConfigurator.m */; };
+		01E17A8D175C05670059C0DA /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E17A8C175C05670059C0DA /* Bar.m */; };
+		01E17A8E175C05670059C0DA /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E17A8C175C05670059C0DA /* Bar.m */; };
+		0AE1F75E173F28EC00E39F57 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE1F75D173F28EC00E39F57 /* CoreData.framework */; };
+		0AE1F760173F29F200E39F57 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE1F75F173F29F200E39F57 /* Security.framework */; };
+		0AE1F762173F2A0400E39F57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE1F761173F2A0400E39F57 /* SystemConfiguration.framework */; };
+		0AE1F764173F2A0F00E39F57 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE1F763173F2A0F00E39F57 /* MobileCoreServices.framework */; };
+		0AE1F766173F2A1A00E39F57 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE1F765173F2A1900E39F57 /* CoreLocation.framework */; };
+		0AE1F772173F2E6C00E39F57 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE1F75D173F28EC00E39F57 /* CoreData.framework */; };
+		0AE1F773173F2E7F00E39F57 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE1F75F173F29F200E39F57 /* Security.framework */; };
+		0AE1F774173F2E8800E39F57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE1F761173F2A0400E39F57 /* SystemConfiguration.framework */; };
+		0AE1F775173F2E9200E39F57 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE1F763173F2A0F00E39F57 /* MobileCoreServices.framework */; };
+		0AE1F776173F2E9B00E39F57 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE1F765173F2A1900E39F57 /* CoreLocation.framework */; };
+		0AE3EBC91736C1DC0001AC37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EBC81736C1DC0001AC37 /* UIKit.framework */; };
+		0AE3EBCB1736C1DC0001AC37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EBCA1736C1DC0001AC37 /* Foundation.framework */; };
+		0AE3EBCD1736C1DC0001AC37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EBCC1736C1DC0001AC37 /* CoreGraphics.framework */; };
+		0AE3EBD31736C1DC0001AC37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EBD11736C1DC0001AC37 /* InfoPlist.strings */; };
+		0AE3EBD51736C1DC0001AC37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3EBD41736C1DC0001AC37 /* main.m */; };
+		0AE3EBD91736C1DC0001AC37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3EBD81736C1DC0001AC37 /* AppDelegate.m */; };
+		0AE3EBDB1736C1DC0001AC37 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EBDA1736C1DC0001AC37 /* Default.png */; };
+		0AE3EBDD1736C1DC0001AC37 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EBDC1736C1DC0001AC37 /* Default@2x.png */; };
+		0AE3EBDF1736C1DC0001AC37 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EBDE1736C1DC0001AC37 /* Default-568h@2x.png */; };
+		0AE3EBE21736C1DC0001AC37 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EBE01736C1DC0001AC37 /* MainStoryboard_iPhone.storyboard */; };
+		0AE3EBE51736C1DC0001AC37 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EBE31736C1DC0001AC37 /* MainStoryboard_iPad.storyboard */; };
+		0AE3EBE81736C1DC0001AC37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3EBE71736C1DC0001AC37 /* ViewController.m */; };
+		0AE3EBF01736C1DD0001AC37 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EBEF1736C1DD0001AC37 /* SenTestingKit.framework */; };
+		0AE3EBF11736C1DD0001AC37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EBC81736C1DC0001AC37 /* UIKit.framework */; };
+		0AE3EBF21736C1DD0001AC37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EBCA1736C1DC0001AC37 /* Foundation.framework */; };
+		0AE3EBFA1736C1DD0001AC37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EBF81736C1DD0001AC37 /* InfoPlist.strings */; };
+		0AE3EBFD1736C1DD0001AC37 /* KitchenSyncStackmobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3EBFC1736C1DD0001AC37 /* KitchenSyncStackmobTests.m */; };
+		0AE3EC3A1736C2160001AC37 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EC071736C2160001AC37 /* CHANGELOG.md */; };
+		0AE3EC3B1736C2160001AC37 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3EC071736C2160001AC37 /* CHANGELOG.md */; };
+		0AE3EC3C1736C2160001AC37 /* libstackmob-v1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EC391736C2160001AC37 /* libstackmob-v1.4.0.a */; };
+		0AE3EC3D1736C2170001AC37 /* libstackmob-v1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EC391736C2160001AC37 /* libstackmob-v1.4.0.a */; };
+		0AE3EC471737270D0001AC37 /* KitchenSink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3EC451737270D0001AC37 /* KitchenSink.xcdatamodeld */; };
+		0AE3EC481737270D0001AC37 /* KitchenSink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3EC451737270D0001AC37 /* KitchenSink.xcdatamodeld */; };
+		0AE3EC4B1737333B0001AC37 /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3EC4A1737333B0001AC37 /* Foo.m */; };
+		0AE3EC4C1737333B0001AC37 /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3EC4A1737333B0001AC37 /* Foo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AE3EBF31736C1DD0001AC37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AE3EBBD1736C1DC0001AC37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AE3EBC41736C1DC0001AC37;
+			remoteInfo = KitchenSyncStackmob;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D67CF31788EBB100ED6AE9 /* StackMobConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StackMobConfiguration.plist; sourceTree = "<group>"; };
+		01E17A88175BA3C30059C0DA /* StackMobConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackMobConfigurator.h; sourceTree = "<group>"; };
+		01E17A89175BA3C30059C0DA /* StackMobConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackMobConfigurator.m; sourceTree = "<group>"; };
+		01E17A8B175C05670059C0DA /* Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
+		01E17A8C175C05670059C0DA /* Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
+		0AE1F75D173F28EC00E39F57 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0AE1F75F173F29F200E39F57 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0AE1F761173F2A0400E39F57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0AE1F763173F2A0F00E39F57 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0AE1F765173F2A1900E39F57 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0AE3EBC51736C1DC0001AC37 /* KitchenSyncStackmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchenSyncStackmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE3EBC81736C1DC0001AC37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0AE3EBCA1736C1DC0001AC37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AE3EBCC1736C1DC0001AC37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0AE3EBD01736C1DC0001AC37 /* KitchenSyncStackmob-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KitchenSyncStackmob-Info.plist"; sourceTree = "<group>"; };
+		0AE3EBD21736C1DC0001AC37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AE3EBD41736C1DC0001AC37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AE3EBD61736C1DC0001AC37 /* KitchenSyncStackmob-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KitchenSyncStackmob-Prefix.pch"; sourceTree = "<group>"; };
+		0AE3EBD71736C1DC0001AC37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0AE3EBD81736C1DC0001AC37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0AE3EBDA1736C1DC0001AC37 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0AE3EBDC1736C1DC0001AC37 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0AE3EBDE1736C1DC0001AC37 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0AE3EBE11736C1DC0001AC37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0AE3EBE41736C1DC0001AC37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0AE3EBE61736C1DC0001AC37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0AE3EBE71736C1DC0001AC37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0AE3EBEE1736C1DD0001AC37 /* KitchenSyncStackmobTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitchenSyncStackmobTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE3EBEF1736C1DD0001AC37 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0AE3EBF71736C1DD0001AC37 /* KitchenSyncStackmobTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KitchenSyncStackmobTests-Info.plist"; sourceTree = "<group>"; };
+		0AE3EBF91736C1DD0001AC37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AE3EBFB1736C1DD0001AC37 /* KitchenSyncStackmobTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitchenSyncStackmobTests.h; sourceTree = "<group>"; };
+		0AE3EBFC1736C1DD0001AC37 /* KitchenSyncStackmobTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitchenSyncStackmobTests.m; sourceTree = "<group>"; };
+		0AE3EC071736C2160001AC37 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		0AE3EC091736C2160001AC37 /* AFHTTPClient+StackMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPClient+StackMob.h"; sourceTree = "<group>"; };
+		0AE3EC0A1736C2160001AC37 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		0AE3EC0B1736C2160001AC37 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		0AE3EC0C1736C2160001AC37 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		0AE3EC0D1736C2160001AC37 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		0AE3EC0E1736C2160001AC37 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		0AE3EC0F1736C2160001AC37 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		0AE3EC101736C2160001AC37 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		0AE3EC111736C2160001AC37 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		0AE3EC121736C2160001AC37 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		0AE3EC131736C2160001AC37 /* Base64EncodedStringFromData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64EncodedStringFromData.h; sourceTree = "<group>"; };
+		0AE3EC141736C2160001AC37 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		0AE3EC151736C2160001AC37 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		0AE3EC161736C2160001AC37 /* NSArray+Enumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Enumerable.h"; sourceTree = "<group>"; };
+		0AE3EC171736C2160001AC37 /* NSDictionary+AtomicCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AtomicCounter.h"; sourceTree = "<group>"; };
+		0AE3EC181736C2160001AC37 /* NSEntityDescription+StackMobSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+StackMobSerialization.h"; sourceTree = "<group>"; };
+		0AE3EC191736C2160001AC37 /* NSManagedObject+StackMobSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+StackMobSerialization.h"; sourceTree = "<group>"; };
+		0AE3EC1A1736C2160001AC37 /* NSManagedObjectContext+Concurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Concurrency.h"; sourceTree = "<group>"; };
+		0AE3EC1B1736C2160001AC37 /* SMBinaryDataConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBinaryDataConversion.h; sourceTree = "<group>"; };
+		0AE3EC1C1736C2160001AC37 /* SMClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMClient.h; sourceTree = "<group>"; };
+		0AE3EC1D1736C2160001AC37 /* SMCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCoreDataStore.h; sourceTree = "<group>"; };
+		0AE3EC1E1736C2160001AC37 /* SMCustomCodeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCustomCodeRequest.h; sourceTree = "<group>"; };
+		0AE3EC1F1736C2160001AC37 /* SMDataStore+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMDataStore+Protected.h"; sourceTree = "<group>"; };
+		0AE3EC201736C2160001AC37 /* SMDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDataStore.h; sourceTree = "<group>"; };
+		0AE3EC211736C2160001AC37 /* SMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMError.h; sourceTree = "<group>"; };
+		0AE3EC221736C2160001AC37 /* SMGeoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMGeoPoint.h; sourceTree = "<group>"; };
+		0AE3EC231736C2160001AC37 /* SMIncrementalStore+Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMIncrementalStore+Query.h"; sourceTree = "<group>"; };
+		0AE3EC241736C2160001AC37 /* SMIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMIncrementalStore.h; sourceTree = "<group>"; };
+		0AE3EC251736C2160001AC37 /* SMIncrementalStoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMIncrementalStoreNode.h; sourceTree = "<group>"; };
+		0AE3EC261736C2160001AC37 /* SMJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJSONRequestOperation.h; sourceTree = "<group>"; };
+		0AE3EC271736C2160001AC37 /* SMLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLocationManager.h; sourceTree = "<group>"; };
+		0AE3EC281736C2160001AC37 /* SMNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMNetworkReachability.h; sourceTree = "<group>"; };
+		0AE3EC291736C2160001AC37 /* SMOAuth1Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMOAuth1Client.h; sourceTree = "<group>"; };
+		0AE3EC2A1736C2160001AC37 /* SMOAuth2Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMOAuth2Client.h; sourceTree = "<group>"; };
+		0AE3EC2B1736C2160001AC37 /* SMPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPredicate.h; sourceTree = "<group>"; };
+		0AE3EC2C1736C2160001AC37 /* SMPushClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPushClient.h; sourceTree = "<group>"; };
+		0AE3EC2D1736C2160001AC37 /* SMPushToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPushToken.h; sourceTree = "<group>"; };
+		0AE3EC2E1736C2160001AC37 /* SMQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMQuery.h; sourceTree = "<group>"; };
+		0AE3EC2F1736C2160001AC37 /* SMRequestOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRequestOptions.h; sourceTree = "<group>"; };
+		0AE3EC301736C2160001AC37 /* SMResponseBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMResponseBlocks.h; sourceTree = "<group>"; };
+		0AE3EC311736C2160001AC37 /* SMUserManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMUserManagedObject.h; sourceTree = "<group>"; };
+		0AE3EC321736C2160001AC37 /* SMUserSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMUserSession.h; sourceTree = "<group>"; };
+		0AE3EC331736C2160001AC37 /* SMVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMVersion.h; sourceTree = "<group>"; };
+		0AE3EC341736C2160001AC37 /* StackMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackMob.h; sourceTree = "<group>"; };
+		0AE3EC351736C2160001AC37 /* StackMobPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackMobPush.h; sourceTree = "<group>"; };
+		0AE3EC361736C2160001AC37 /* Synchronization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Synchronization.h; sourceTree = "<group>"; };
+		0AE3EC371736C2160001AC37 /* SystemInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInformation.h; sourceTree = "<group>"; };
+		0AE3EC381736C2160001AC37 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		0AE3EC391736C2160001AC37 /* libstackmob-v1.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libstackmob-v1.4.0.a"; sourceTree = "<group>"; };
+		0AE3EC461737270D0001AC37 /* KitchenSink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KitchenSink.xcdatamodel; sourceTree = "<group>"; };
+		0AE3EC491737333B0001AC37 /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		0AE3EC4A1737333B0001AC37 /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AE3EBC21736C1DC0001AC37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE1F766173F2A1A00E39F57 /* CoreLocation.framework in Frameworks */,
+				0AE1F764173F2A0F00E39F57 /* MobileCoreServices.framework in Frameworks */,
+				0AE1F762173F2A0400E39F57 /* SystemConfiguration.framework in Frameworks */,
+				0AE1F760173F29F200E39F57 /* Security.framework in Frameworks */,
+				0AE1F75E173F28EC00E39F57 /* CoreData.framework in Frameworks */,
+				0AE3EBC91736C1DC0001AC37 /* UIKit.framework in Frameworks */,
+				0AE3EBCB1736C1DC0001AC37 /* Foundation.framework in Frameworks */,
+				0AE3EBCD1736C1DC0001AC37 /* CoreGraphics.framework in Frameworks */,
+				0AE3EC3C1736C2160001AC37 /* libstackmob-v1.4.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE3EBEA1736C1DD0001AC37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE1F776173F2E9B00E39F57 /* CoreLocation.framework in Frameworks */,
+				0AE1F775173F2E9200E39F57 /* MobileCoreServices.framework in Frameworks */,
+				0AE1F774173F2E8800E39F57 /* SystemConfiguration.framework in Frameworks */,
+				0AE1F773173F2E7F00E39F57 /* Security.framework in Frameworks */,
+				0AE1F772173F2E6C00E39F57 /* CoreData.framework in Frameworks */,
+				0AE3EBF01736C1DD0001AC37 /* SenTestingKit.framework in Frameworks */,
+				0AE3EBF11736C1DD0001AC37 /* UIKit.framework in Frameworks */,
+				0AE3EBF21736C1DD0001AC37 /* Foundation.framework in Frameworks */,
+				0AE3EC3D1736C2170001AC37 /* libstackmob-v1.4.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AE1F733173CC78000E39F57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AE3EC491737333B0001AC37 /* Foo.h */,
+				0AE3EC4A1737333B0001AC37 /* Foo.m */,
+				01E17A8B175C05670059C0DA /* Bar.h */,
+				01E17A8C175C05670059C0DA /* Bar.m */,
+				0AE3EC451737270D0001AC37 /* KitchenSink.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0AE3EBBC1736C1DC0001AC37 = {
+			isa = PBXGroup;
+			children = (
+				0AE3EC061736C2160001AC37 /* StackMob-v1.4.0 */,
+				0AE3EBCE1736C1DC0001AC37 /* KitchenSyncStackmob */,
+				0AE3EBF51736C1DD0001AC37 /* KitchenSyncStackmobTests */,
+				0AE3EBC71736C1DC0001AC37 /* Frameworks */,
+				0AE3EBC61736C1DC0001AC37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AE3EBC61736C1DC0001AC37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AE3EBC51736C1DC0001AC37 /* KitchenSyncStackmob.app */,
+				0AE3EBEE1736C1DD0001AC37 /* KitchenSyncStackmobTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AE3EBC71736C1DC0001AC37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AE1F765173F2A1900E39F57 /* CoreLocation.framework */,
+				0AE1F763173F2A0F00E39F57 /* MobileCoreServices.framework */,
+				0AE1F761173F2A0400E39F57 /* SystemConfiguration.framework */,
+				0AE1F75F173F29F200E39F57 /* Security.framework */,
+				0AE1F75D173F28EC00E39F57 /* CoreData.framework */,
+				0AE3EBC81736C1DC0001AC37 /* UIKit.framework */,
+				0AE3EBCA1736C1DC0001AC37 /* Foundation.framework */,
+				0AE3EBCC1736C1DC0001AC37 /* CoreGraphics.framework */,
+				0AE3EBEF1736C1DD0001AC37 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AE3EBCE1736C1DC0001AC37 /* KitchenSyncStackmob */ = {
+			isa = PBXGroup;
+			children = (
+				0AE1F733173CC78000E39F57 /* Models */,
+				0AE3EBD71736C1DC0001AC37 /* AppDelegate.h */,
+				0AE3EBD81736C1DC0001AC37 /* AppDelegate.m */,
+				0AE3EBE01736C1DC0001AC37 /* MainStoryboard_iPhone.storyboard */,
+				0AE3EBE31736C1DC0001AC37 /* MainStoryboard_iPad.storyboard */,
+				0AE3EBE61736C1DC0001AC37 /* ViewController.h */,
+				0AE3EBE71736C1DC0001AC37 /* ViewController.m */,
+				0AE3EBCF1736C1DC0001AC37 /* Supporting Files */,
+			);
+			path = KitchenSyncStackmob;
+			sourceTree = "<group>";
+		};
+		0AE3EBCF1736C1DC0001AC37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AE3EBD01736C1DC0001AC37 /* KitchenSyncStackmob-Info.plist */,
+				0AE3EBD11736C1DC0001AC37 /* InfoPlist.strings */,
+				0AE3EBD41736C1DC0001AC37 /* main.m */,
+				0AE3EBD61736C1DC0001AC37 /* KitchenSyncStackmob-Prefix.pch */,
+				0AE3EBDA1736C1DC0001AC37 /* Default.png */,
+				0AE3EBDC1736C1DC0001AC37 /* Default@2x.png */,
+				0AE3EBDE1736C1DC0001AC37 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AE3EBF51736C1DD0001AC37 /* KitchenSyncStackmobTests */ = {
+			isa = PBXGroup;
+			children = (
+				01D67CF31788EBB100ED6AE9 /* StackMobConfiguration.plist */,
+				01E17A88175BA3C30059C0DA /* StackMobConfigurator.h */,
+				01E17A89175BA3C30059C0DA /* StackMobConfigurator.m */,
+				0AE3EBFB1736C1DD0001AC37 /* KitchenSyncStackmobTests.h */,
+				0AE3EBFC1736C1DD0001AC37 /* KitchenSyncStackmobTests.m */,
+				0AE3EBF61736C1DD0001AC37 /* Supporting Files */,
+			);
+			path = KitchenSyncStackmobTests;
+			sourceTree = "<group>";
+		};
+		0AE3EBF61736C1DD0001AC37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AE3EBF71736C1DD0001AC37 /* KitchenSyncStackmobTests-Info.plist */,
+				0AE3EBF81736C1DD0001AC37 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AE3EC061736C2160001AC37 /* StackMob-v1.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				0AE3EC071736C2160001AC37 /* CHANGELOG.md */,
+				0AE3EC081736C2160001AC37 /* Headers */,
+				0AE3EC391736C2160001AC37 /* libstackmob-v1.4.0.a */,
+			);
+			path = "StackMob-v1.4.0";
+			sourceTree = "<group>";
+		};
+		0AE3EC081736C2160001AC37 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0AE3EC091736C2160001AC37 /* AFHTTPClient+StackMob.h */,
+				0AE3EC0A1736C2160001AC37 /* AFHTTPClient.h */,
+				0AE3EC0B1736C2160001AC37 /* AFHTTPRequestOperation.h */,
+				0AE3EC0C1736C2160001AC37 /* AFImageRequestOperation.h */,
+				0AE3EC0D1736C2160001AC37 /* AFJSONRequestOperation.h */,
+				0AE3EC0E1736C2160001AC37 /* AFNetworkActivityIndicatorManager.h */,
+				0AE3EC0F1736C2160001AC37 /* AFNetworking.h */,
+				0AE3EC101736C2160001AC37 /* AFPropertyListRequestOperation.h */,
+				0AE3EC111736C2160001AC37 /* AFURLConnectionOperation.h */,
+				0AE3EC121736C2160001AC37 /* AFXMLRequestOperation.h */,
+				0AE3EC131736C2160001AC37 /* Base64EncodedStringFromData.h */,
+				0AE3EC141736C2160001AC37 /* Common.h */,
+				0AE3EC151736C2160001AC37 /* KeychainWrapper.h */,
+				0AE3EC161736C2160001AC37 /* NSArray+Enumerable.h */,
+				0AE3EC171736C2160001AC37 /* NSDictionary+AtomicCounter.h */,
+				0AE3EC181736C2160001AC37 /* NSEntityDescription+StackMobSerialization.h */,
+				0AE3EC191736C2160001AC37 /* NSManagedObject+StackMobSerialization.h */,
+				0AE3EC1A1736C2160001AC37 /* NSManagedObjectContext+Concurrency.h */,
+				0AE3EC1B1736C2160001AC37 /* SMBinaryDataConversion.h */,
+				0AE3EC1C1736C2160001AC37 /* SMClient.h */,
+				0AE3EC1D1736C2160001AC37 /* SMCoreDataStore.h */,
+				0AE3EC1E1736C2160001AC37 /* SMCustomCodeRequest.h */,
+				0AE3EC1F1736C2160001AC37 /* SMDataStore+Protected.h */,
+				0AE3EC201736C2160001AC37 /* SMDataStore.h */,
+				0AE3EC211736C2160001AC37 /* SMError.h */,
+				0AE3EC221736C2160001AC37 /* SMGeoPoint.h */,
+				0AE3EC231736C2160001AC37 /* SMIncrementalStore+Query.h */,
+				0AE3EC241736C2160001AC37 /* SMIncrementalStore.h */,
+				0AE3EC251736C2160001AC37 /* SMIncrementalStoreNode.h */,
+				0AE3EC261736C2160001AC37 /* SMJSONRequestOperation.h */,
+				0AE3EC271736C2160001AC37 /* SMLocationManager.h */,
+				0AE3EC281736C2160001AC37 /* SMNetworkReachability.h */,
+				0AE3EC291736C2160001AC37 /* SMOAuth1Client.h */,
+				0AE3EC2A1736C2160001AC37 /* SMOAuth2Client.h */,
+				0AE3EC2B1736C2160001AC37 /* SMPredicate.h */,
+				0AE3EC2C1736C2160001AC37 /* SMPushClient.h */,
+				0AE3EC2D1736C2160001AC37 /* SMPushToken.h */,
+				0AE3EC2E1736C2160001AC37 /* SMQuery.h */,
+				0AE3EC2F1736C2160001AC37 /* SMRequestOptions.h */,
+				0AE3EC301736C2160001AC37 /* SMResponseBlocks.h */,
+				0AE3EC311736C2160001AC37 /* SMUserManagedObject.h */,
+				0AE3EC321736C2160001AC37 /* SMUserSession.h */,
+				0AE3EC331736C2160001AC37 /* SMVersion.h */,
+				0AE3EC341736C2160001AC37 /* StackMob.h */,
+				0AE3EC351736C2160001AC37 /* StackMobPush.h */,
+				0AE3EC361736C2160001AC37 /* Synchronization.h */,
+				0AE3EC371736C2160001AC37 /* SystemInformation.h */,
+				0AE3EC381736C2160001AC37 /* UIImageView+AFNetworking.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AE3EBC41736C1DC0001AC37 /* KitchenSyncStackmob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE3EC001736C1DD0001AC37 /* Build configuration list for PBXNativeTarget "KitchenSyncStackmob" */;
+			buildPhases = (
+				0AE3EBC11736C1DC0001AC37 /* Sources */,
+				0AE3EBC21736C1DC0001AC37 /* Frameworks */,
+				0AE3EBC31736C1DC0001AC37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KitchenSyncStackmob;
+			productName = KitchenSyncStackmob;
+			productReference = 0AE3EBC51736C1DC0001AC37 /* KitchenSyncStackmob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AE3EBED1736C1DD0001AC37 /* KitchenSyncStackmobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE3EC031736C1DD0001AC37 /* Build configuration list for PBXNativeTarget "KitchenSyncStackmobTests" */;
+			buildPhases = (
+				0AE3EBE91736C1DD0001AC37 /* Sources */,
+				0AE3EBEA1736C1DD0001AC37 /* Frameworks */,
+				0AE3EBEB1736C1DD0001AC37 /* Resources */,
+				012C349C17700BA700F59556 /* Copy StackMob Config */,
+				0AE3EBEC1736C1DD0001AC37 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AE3EBF41736C1DD0001AC37 /* PBXTargetDependency */,
+			);
+			name = KitchenSyncStackmobTests;
+			productName = KitchenSyncStackmobTests;
+			productReference = 0AE3EBEE1736C1DD0001AC37 /* KitchenSyncStackmobTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AE3EBBD1736C1DC0001AC37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = FatFractal;
+			};
+			buildConfigurationList = 0AE3EBC01736C1DC0001AC37 /* Build configuration list for PBXProject "KitchenSyncStackmob" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0AE3EBBC1736C1DC0001AC37;
+			productRefGroup = 0AE3EBC61736C1DC0001AC37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AE3EBC41736C1DC0001AC37 /* KitchenSyncStackmob */,
+				0AE3EBED1736C1DD0001AC37 /* KitchenSyncStackmobTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AE3EBC31736C1DC0001AC37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE3EBD31736C1DC0001AC37 /* InfoPlist.strings in Resources */,
+				0AE3EBDB1736C1DC0001AC37 /* Default.png in Resources */,
+				0AE3EBDD1736C1DC0001AC37 /* Default@2x.png in Resources */,
+				0AE3EBDF1736C1DC0001AC37 /* Default-568h@2x.png in Resources */,
+				0AE3EBE21736C1DC0001AC37 /* MainStoryboard_iPhone.storyboard in Resources */,
+				0AE3EBE51736C1DC0001AC37 /* MainStoryboard_iPad.storyboard in Resources */,
+				0AE3EC3A1736C2160001AC37 /* CHANGELOG.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE3EBEB1736C1DD0001AC37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE3EBFA1736C1DD0001AC37 /* InfoPlist.strings in Resources */,
+				0AE3EC3B1736C2160001AC37 /* CHANGELOG.md in Resources */,
+				01D67CF41788EBB100ED6AE9 /* StackMobConfiguration.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		012C349C17700BA700F59556 /* Copy StackMob Config */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy StackMob Config";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# this is for future development\n#\"$PROJECT_DIR/Scripts/copyConfig.sh\"";
+		};
+		0AE3EBEC1736C1DD0001AC37 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AE3EBC11736C1DC0001AC37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE3EBD51736C1DC0001AC37 /* main.m in Sources */,
+				0AE3EBD91736C1DC0001AC37 /* AppDelegate.m in Sources */,
+				0AE3EBE81736C1DC0001AC37 /* ViewController.m in Sources */,
+				0AE3EC471737270D0001AC37 /* KitchenSink.xcdatamodeld in Sources */,
+				0AE3EC4B1737333B0001AC37 /* Foo.m in Sources */,
+				01E17A8D175C05670059C0DA /* Bar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE3EBE91736C1DD0001AC37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE3EBFD1736C1DD0001AC37 /* KitchenSyncStackmobTests.m in Sources */,
+				0AE3EC481737270D0001AC37 /* KitchenSink.xcdatamodeld in Sources */,
+				0AE3EC4C1737333B0001AC37 /* Foo.m in Sources */,
+				01E17A8A175BA3C30059C0DA /* StackMobConfigurator.m in Sources */,
+				01E17A8E175C05670059C0DA /* Bar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AE3EBF41736C1DD0001AC37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AE3EBC41736C1DC0001AC37 /* KitchenSyncStackmob */;
+			targetProxy = 0AE3EBF31736C1DD0001AC37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AE3EBD11736C1DC0001AC37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AE3EBD21736C1DC0001AC37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0AE3EBE01736C1DC0001AC37 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AE3EBE11736C1DC0001AC37 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0AE3EBE31736C1DC0001AC37 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AE3EBE41736C1DC0001AC37 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0AE3EBF81736C1DD0001AC37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AE3EBF91736C1DD0001AC37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AE3EBFE1736C1DD0001AC37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AE3EBFF1736C1DD0001AC37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AE3EC011736C1DD0001AC37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSyncStackmob/KitchenSyncStackmob-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSyncStackmob/KitchenSyncStackmob-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/StackMob-v1.4.0\"",
+				);
+				PRODUCT_NAME = KitchenSyncStackmob;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0AE3EC021736C1DD0001AC37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSyncStackmob/KitchenSyncStackmob-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSyncStackmob/KitchenSyncStackmob-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/StackMob-v1.4.0\"",
+				);
+				PRODUCT_NAME = KitchenSyncStackmob;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0AE3EC041736C1DD0001AC37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KitchenSyncStackmob.app/KitchenSyncStackmob";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSyncStackmob/KitchenSyncStackmob-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSyncStackmobTests/KitchenSyncStackmobTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/StackMob-v1.4.0\"",
+				);
+				PRODUCT_NAME = KitchenSyncStackmobTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0AE3EC051736C1DD0001AC37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KitchenSyncStackmob.app/KitchenSyncStackmob";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSyncStackmob/KitchenSyncStackmob-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSyncStackmobTests/KitchenSyncStackmobTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/StackMob-v1.4.0\"",
+				);
+				PRODUCT_NAME = KitchenSyncStackmobTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AE3EBC01736C1DC0001AC37 /* Build configuration list for PBXProject "KitchenSyncStackmob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE3EBFE1736C1DD0001AC37 /* Debug */,
+				0AE3EBFF1736C1DD0001AC37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE3EC001736C1DD0001AC37 /* Build configuration list for PBXNativeTarget "KitchenSyncStackmob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE3EC011736C1DD0001AC37 /* Debug */,
+				0AE3EC021736C1DD0001AC37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE3EC031736C1DD0001AC37 /* Build configuration list for PBXNativeTarget "KitchenSyncStackmobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE3EC041736C1DD0001AC37 /* Debug */,
+				0AE3EC051736C1DD0001AC37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0AE3EC451737270D0001AC37 /* KitchenSink.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AE3EC461737270D0001AC37 /* KitchenSink.xcdatamodel */,
+			);
+			currentVersion = 0AE3EC461737270D0001AC37 /* KitchenSink.xcdatamodel */;
+			path = KitchenSink.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0AE3EBBD1736C1DC0001AC37 /* Project object */;
+}

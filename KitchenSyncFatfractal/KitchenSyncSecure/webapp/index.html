@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function httpsRedirect() {
+                var httpURL = window.location.hostname + window.location.pathname;
+                console.log(httpURL);
+                if(window.location.href.match('localhost')) {
+                    console.log("https://" + window.location.hostname + ":" + "8443" + window.location.pathname);
+                    window.location = "https://" + window.location.hostname + (window.location.port ? ":" + window.location.port : "");
+                } else window.location = "https://" + httpURL;
+            }
+            console.log(window.location.href);
+            if(!window.location.href.match('^https://'))
+                httpsRedirect();
+        </script>
+        <link rel="stylesheet" href="css/qunit-1.10.0.css"/>
+    </head>
+    <body>
+        <h1 id="baseurl"></h1>
+        <p id="explain"></p>
+        <div id="qunit"></div>
+    </body>
+    <script type='text/javascript'>
+        var baseEl = document.getElementById('baseurl');
+        var re = /\/index.html$/;
+        var app = window.location.pathname.replace(re, "");
+        var appName = app.slice(1);
+        var host = window.location.hostname + (window.location.port ? ":" + window.location.port : "");
+        baseEl.innerHTML = host + app;
+        var explainEl = document.getElementById('explain');
+        explainEl.innerHTML = "Application: " + appName + " is running on " + host;
+        window.document.title = "FatFractal KitchenSync HTML5/JS Test served by " + appName + " backend"
+    </script>
+    <script src="js/qunit-1.10.0.js"></script>
+    <script src="js/FatFractal.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/KitchenSyncTests.js"></script>
+    <script type='text/javascript'>
+        setUpKitchenSyncTests();
+    </script>
+    <script type="text/javascript">
+        var ff = new FatFractal();
+        window.onbeforeunload=cleanup;
+        function cleanup(e) {
+            var leave_message = 'Thanks for visiting! \nAll test data has been deleted.';
+            ff.getObjFromExtension("/ff/ext/cleanup", function(resp) {
+            }, function(code, msg) {
+                console.error("cleanup error: " + msg);
+            });
+            return leave_message;
+        }
+    </script>
+</html>
+
