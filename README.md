@@ -20,6 +20,7 @@ Each project, exception for the FatFractal project, requires some form of *appli
 * [Setup and Configuration - iOS](http://cwil.es/kitchenSyncSetupConfigIOS)
 * [Object Construction - iOS](http://cwil.es/kitchenSyncObjConstructIOS)
 * [Setup and Configuration - JS](http://cwil.es/kitchenSyncSetupConfigJS)
+* [Object Construction - JS](http://cwil.es/kitchenSyncObjectConstructJS)
 
 ### TODO
 
