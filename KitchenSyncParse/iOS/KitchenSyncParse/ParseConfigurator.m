@@ -27,9 +27,9 @@
   static dispatch_once_t oncePredicate;
   
   dispatch_once(&oncePredicate, ^{
-    
-    NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"ParseConfiguration"
-                                                         ofType:@"plist"];
+
+    NSString *dataPath = [[NSBundle bundleForClass:[self class]] pathForResource:@"ParseConfiguration"
+                                                                          ofType:@"plist"];
     
     configurationDict = [NSDictionary dictionaryWithContentsOfFile:dataPath];
   });
