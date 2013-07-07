@@ -19,12 +19,6 @@ DerivedData
 *~
 ff-generated/
 
-ParseConfiguration.plist
-StackmobConfiguration.plist
-KinveyConfiguration.plist
-FatFractalConfiguration.plist
-
-
 KitchenSyncFatfractal/KitchenSyncOpen/ff-generated/exploded/WEB-INF/fatfractal.xml
 
 KitchenSyncFatfractal/KitchenSyncOpen/ff-generated/exploded/WEB-INF/fatfractal.xml
