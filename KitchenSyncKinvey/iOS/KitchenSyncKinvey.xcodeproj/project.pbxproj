@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		016D40E51760B46000089389 /* KinveyConfiguration.plist.sample in Resources */ = {isa = PBXBuildFile; fileRef = 016D40E41760B46000089389 /* KinveyConfiguration.plist.sample */; };
+		016D40E51760B46000089389 /* KinveyConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 016D40E41760B46000089389 /* KinveyConfiguration.plist */; };
 		016D40EC1760B5B600089389 /* KinveyConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D40EB1760B5B600089389 /* KinveyConfigurator.m */; };
 		0AE1F736173CC7DC00E39F57 /* KitchenSink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1F734173CC7DC00E39F57 /* KitchenSink.xcdatamodeld */; };
 		0AE1F737173CC7DC00E39F57 /* KitchenSink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1F734173CC7DC00E39F57 /* KitchenSink.xcdatamodeld */; };
@@ -72,7 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		016D40E41760B46000089389 /* KinveyConfiguration.plist.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KinveyConfiguration.plist.sample; sourceTree = "<group>"; };
+		016D40E41760B46000089389 /* KinveyConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KinveyConfiguration.plist; sourceTree = "<group>"; };
 		016D40EA1760B5B600089389 /* KinveyConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinveyConfigurator.h; sourceTree = "<group>"; };
 		016D40EB1760B5B600089389 /* KinveyConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinveyConfigurator.m; sourceTree = "<group>"; };
 		0AE1F735173CC7DC00E39F57 /* KitchenSink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KitchenSink.xcdatamodel; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 				0AFC9C3A1729985E00FD0927 /* KitchenSyncKinveyTests.h */,
 				0AFC9C3B1729985E00FD0927 /* KitchenSyncKinveyTests.m */,
 				0AFC9C351729985E00FD0927 /* Supporting Files */,
-				016D40E41760B46000089389 /* KinveyConfiguration.plist.sample */,
+				016D40E41760B46000089389 /* KinveyConfiguration.plist */,
 			);
 			path = KitchenSyncKinveyTests;
 			sourceTree = "<group>";
@@ -369,7 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AFC9C391729985E00FD0927 /* InfoPlist.strings in Resources */,
-				016D40E51760B46000089389 /* KinveyConfiguration.plist.sample in Resources */,
+				016D40E51760B46000089389 /* KinveyConfiguration.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +388,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PROJECT_DIR/Scripts/copyConfig.sh\"";
+			shellScript = "# this is for future development\n#\"$PROJECT_DIR/Scripts/copyConfig.sh\"";
 		};
 		0AFC9C2B1729985E00FD0927 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
