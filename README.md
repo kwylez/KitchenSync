@@ -12,7 +12,7 @@ You *should* be able to run these tests OOTB.
 
 **NOTE**
 
-Each project, exception for the FatFractal project, requires some form of *application / master* key. For those projects I've included **mine**. You can replace the keys with your own if you would like. Just edit the *ProjectName*`Configuration.plist.sample` with your credentials. I'm providing mine so that it makes it as easy as possible run the tests. *I can't stand a bunch of setup*. Though the FatFractal project doesn't require keys if you haven't install their local runtime then those tests **will** fail. For instructions on setting the local runtime up please visit their [getting started tutorial](http://fatfractal.com/prod/docs/getting-started/).
+Each project, exception for the FatFractal project, requires some form of *application / master* key. For those projects I've included **mine**. You can replace the keys with your own if you would like. Just edit the *ProjectName*`Configuration.plist` with your credentials. I'm providing mine so that it makes it as easy as possible run the tests. *I can't stand a bunch of setup*. Though the FatFractal project doesn't require keys if you haven't install their local runtime then those tests **will** fail. For instructions on setting the local runtime up please visit their [getting started tutorial](http://fatfractal.com/prod/docs/getting-started/).
 
 ### Reports
 
@@ -27,3 +27,4 @@ Each project, exception for the FatFractal project, requires some form of *appli
 * Complete *coming soon* tests listed in the reports
 * Make provider configurations easier
 * Detect if user has local no-server engine setup. If they do then check at compile time if it is running or not. If they don't have it then issue notice.
+* Make configuration "updateable" without tracking a plist.
