@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E17A83175BA23E0059C0DA /* StackMobConfiguration.plist.sample in Resources */ = {isa = PBXBuildFile; fileRef = 01E17A82175BA23E0059C0DA /* StackMobConfiguration.plist.sample */; };
+		01D67CF41788EBB100ED6AE9 /* StackMobConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01D67CF31788EBB100ED6AE9 /* StackMobConfiguration.plist */; };
 		01E17A8A175BA3C30059C0DA /* StackMobConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E17A89175BA3C30059C0DA /* StackMobConfigurator.m */; };
 		01E17A8D175C05670059C0DA /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E17A8C175C05670059C0DA /* Bar.m */; };
 		01E17A8E175C05670059C0DA /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E17A8C175C05670059C0DA /* Bar.m */; };
@@ -59,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01E17A82175BA23E0059C0DA /* StackMobConfiguration.plist.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = StackMobConfiguration.plist.sample; sourceTree = "<group>"; };
+		01D67CF31788EBB100ED6AE9 /* StackMobConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StackMobConfiguration.plist; sourceTree = "<group>"; };
 		01E17A88175BA3C30059C0DA /* StackMobConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackMobConfigurator.h; sourceTree = "<group>"; };
 		01E17A89175BA3C30059C0DA /* StackMobConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackMobConfigurator.m; sourceTree = "<group>"; };
 		01E17A8B175C05670059C0DA /* Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
@@ -263,12 +263,12 @@
 		0AE3EBF51736C1DD0001AC37 /* KitchenSyncStackmobTests */ = {
 			isa = PBXGroup;
 			children = (
+				01D67CF31788EBB100ED6AE9 /* StackMobConfiguration.plist */,
 				01E17A88175BA3C30059C0DA /* StackMobConfigurator.h */,
 				01E17A89175BA3C30059C0DA /* StackMobConfigurator.m */,
 				0AE3EBFB1736C1DD0001AC37 /* KitchenSyncStackmobTests.h */,
 				0AE3EBFC1736C1DD0001AC37 /* KitchenSyncStackmobTests.m */,
 				0AE3EBF61736C1DD0001AC37 /* Supporting Files */,
-				01E17A82175BA23E0059C0DA /* StackMobConfiguration.plist.sample */,
 			);
 			path = KitchenSyncStackmobTests;
 			sourceTree = "<group>";
@@ -435,7 +435,7 @@
 			files = (
 				0AE3EBFA1736C1DD0001AC37 /* InfoPlist.strings in Resources */,
 				0AE3EC3B1736C2160001AC37 /* CHANGELOG.md in Resources */,
-				01E17A83175BA23E0059C0DA /* StackMobConfiguration.plist.sample in Resources */,
+				01D67CF41788EBB100ED6AE9 /* StackMobConfiguration.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +454,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PROJECT_DIR/Scripts/copyConfig.sh\"";
+			shellScript = "# this is for future development\n#\"$PROJECT_DIR/Scripts/copyConfig.sh\"";
 		};
 		0AE3EBEC1736C1DD0001AC37 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
