@@ -22,6 +22,22 @@ Each project, exception for the FatFractal project, requires some form of *appli
 * [Setup and Configuration - JS](http://cwil.es/kitchenSyncSetupConfigJS)
 * [Object Construction - JS](http://cwil.es/kitchenSyncObjectConstructJS)
 
+### JS Test Pages
+
+[Parse - Secure](https://kitchensyncsecure.parseapp.com/index.html)
+
+[FatFractal - Secure](https://kitchensync.fatfractal.com/secure/index.html)
+
+[FatFractal - Open](https://kitchensync.fatfractal.com/open/index.html)
+
+[Stackmob](https://kitchensync.fatfractal.com/stackmob/index.html)
+
+*Stackmob requires credit card for hosting of which I wasn't going to pay for. If they want to provide some hosting for this app I'll move files over there*
+
+[Kinvey](https://kitchensync.fatfractal.com/kinvey/index.html)
+
+*Kinvey doesn't support hosting static files thus the reason for hosting it on FatFractal*
+
 ### TODO
 
 * Add tests for Android
@@ -29,3 +45,4 @@ Each project, exception for the FatFractal project, requires some form of *appli
 * Make provider configurations easier
 * Detect if user has local no-server engine setup. If they do then check at compile time if it is running or not. If they don't have it then issue notice.
 * Make configuration "updateable" without tracking a plist.
+* Add Parse - Open js application
