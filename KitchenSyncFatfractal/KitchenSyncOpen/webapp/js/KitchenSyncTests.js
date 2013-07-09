@@ -101,7 +101,7 @@ asyncTest("test_100_Public_Access", function() {
                console.log("\r\n\t test_100_Public_Access f1 before save = " + 
                    JSON.stringify(f1));
             // create an object to make sure backend is really working
-            ff_open.createObjAtUri(f1, "/Foo", function(f2) {
+            ff_open.createObjAtUri(f1, "/Foos", function(f2) {
                 ok(f2 !== null, "f2 is " + JSON.stringify(f2));
                 // verify that the object can be accessed without authentication
                 var meta = new FFMetaData(f2);
@@ -153,7 +153,7 @@ asyncTest("test_101_Secure_Access", function() {
                 console.log("\r\n\t test_101_Secure_Access f1 before save = " + 
                     JSON.stringify(f1));
             // create an object to make sure backend is really working
-            ff_secure.createObjAtUri(f1, "/Foo", function(f2) {
+            ff_secure.createObjAtUri(f1, "/Foos", function(f2) {
                 ok(f2 !== null, "f2 is " + JSON.stringify(new Foo(f2)));
                 var meta = new FFMetaData(f2);
                 ff_secure.logout();
@@ -362,7 +362,7 @@ asyncTest("test_106_Local_Backend", function() {
                 console.log("\r\n\t test_106_Local_Backend f1 before save = " + 
                     JSON.stringify(f1));
             // create an object to make sure backend is really working
-            ff_local.createObjAtUri(f1, "/Foo", function(f2) {
+            ff_local.createObjAtUri(f1, "/Foos", function(f2) {
                 ok(f2 !== null, "f2 is " + JSON.stringify(new Foo(f2)));
                 var meta = new FFMetaData(f2);
                 ff_local.getObjFromUri(meta.ffUrl, function(f3) {
@@ -409,7 +409,7 @@ asyncTest("test_107_Multiple_Backends", function() {
                 console.log("\r\n\t  f1 before save = " +
                     JSON.stringify(f1));
             // create an object to make sure backend is really working
-            ff_open.createObjAtUri(f1, "/Foo", function(f2) {
+            ff_open.createObjAtUri(f1, "/Foos", function(f2) {
                 ok(f2 !== null, "f2 is " + JSON.stringify(new Foo(f2)));
                 var meta = new FFMetaData(f2);
                 ff_open.getObjFromUri(meta.ffUrl, function(f3) {
@@ -432,7 +432,7 @@ asyncTest("test_107_Multiple_Backends", function() {
                                 console.log("\r\n\t test_107_Multiple_Backends f4 before save = " +
                                     JSON.stringify(new Foo(f4)));
                             // create an object to make sure backend is really working
-                            ff_secure.createObjAtUri(f4, "/Foo", function(f5) {
+                            ff_secure.createObjAtUri(f4, "/Foos", function(f5) {
                                 ok(f5 !== null, "f5 is " + JSON.stringify(new Foo(f5)));
                                 var meta2 = new FFMetaData(f5);
                                 ff_secure.getObjFromUri(meta2.ffUrl, function(f6) {
@@ -526,7 +526,7 @@ asyncTest("test_200_Foo_JSObjClass", function() {
             if(showLogs) 
                console.log("\r\n\t test_200_Foo_JSObjClass f1 before save = " + 
                    JSON.stringify(f1));
-            ff_open.createObjAtUri(f1, "/Foo", function(f2) {
+            ff_open.createObjAtUri(f1, "/Foos", function(f2) {
                 ok(f2 !== null, "f2 is " + JSON.stringify(new Foo(f2)));
                 if(showLogs) 
                     console.log(
@@ -601,7 +601,7 @@ asyncTest("test_202_New_Member_Allowed", function() {
                 console.log(
                     "\r\n\t test_202_New_Member_Allowed f1 before save = " +
                     JSON.stringify(f1));
-            ff_open.createObjAtUri(f1, "/Foo", function(f2) {
+            ff_open.createObjAtUri(f1, "/Foos", function(f2) {
                 ok(f2[memb] == memb, "f2 new member is " + memb);
                 var meta = new FFMetaData(f2);
                 start();
@@ -636,7 +636,7 @@ asyncTest("test_203_New_Member_Disallowed", function() {
                 console.log(
                     "\r\n\t test_203_New_Member_Disallowed f1 before save = " +
                     JSON.stringify(f1));
-            ff_secure.createObjAtUri(f1, "/Foo", function(f2) {
+            ff_secure.createObjAtUri(f1, "/Foos", function(f2) {
                 ok(f2 == null, "f2 is " + JSON.stringify(f2));
                 start(); 
             }, function(code, msg) {
@@ -668,7 +668,7 @@ asyncTest("test_204_Metadata_Provided", function() {
             if(showLogs) 
                console.log("\r\n\t test_204_Metadata_Provided f1 before save = " + 
                    JSON.stringify(f1));
-            ff_open.createObjAtUri(f1, "/Foo", function(f2) {
+            ff_open.createObjAtUri(f1, "/Foos", function(f2) {
                 var meta = new FFMetaData(f2);
                 ok(meta !== null, "metadata is " + JSON.stringify(meta));
                 start(); 

@@ -2,14 +2,14 @@ var ff = require('ffef/FatFractal');
 
 exports.cleanup = function() {
     var count = 0;
-    var foos = ff.getArrayFromUri("/Foo");
+    var foos = ff.getArrayFromUri("/Foos");
     if (foos == null) return;
 
     for (var i = 0; i < foos.length; i++) {
         ff.deleteObj(foos[i]);
         count++;
     }
-    var bars = ff.getArrayFromUri("/Bar");
+    var bars = ff.getArrayFromUri("/Bars");
     if (bars == null) return;
 
     for (var i = 0; i < bars.length; i++) {
@@ -18,7 +18,7 @@ exports.cleanup = function() {
     }
     var ffdls = "";
     var meta = ff.getAppMetaData();
-    var keeps = ["/FFUser","/FFUserGroup","/FFNotificationID","/Foo","/Bar","/Baz"];
+    var keeps = ["/FFUser","/FFUserGroup","/FFNotificationID","/Foos","/Bars","/Baz"];
     print ("retrieved metadata " + JSON.stringify(meta));
     var colls = meta.collectionResources;
     print("colls is: " + JSON.stringify(colls));
