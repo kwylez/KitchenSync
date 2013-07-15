@@ -252,7 +252,7 @@
  * Tests the ability to access multiple backends from the client SDK.
  */
 - (void)test_107_Multiple_Backends {
- STFail(@"Azure does not support multiple backends. See report for further explaination.");
+ STFail(@"Azure does not support multiple backends.");
 }
 
 /*!
@@ -335,7 +335,7 @@
  * to be added by the client if allowed by configuration.
  */
 - (void)test_204_New_Member_Allowed {
-  STFail(@"Azure does not provide support for nsmanagedobject subclasses. See report for further explaination.");
+  STFail(@"See report for further explaination.");
 }
 
 /*!
@@ -350,7 +350,7 @@
  * Tests if and what additional information about your object (metadata) is provided
  */
 - (void)test_206_Metadata_Provided {
-  STFail(@"See report for further explaination.");
+  STFail(@"Azure doesn't support metadata about it's objects");
 }
 
 #pragma mark - Sample data utilities
