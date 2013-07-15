@@ -178,10 +178,28 @@
 
 /*!
  * Tests the ability for a schemaless backend to learn a new Collection automatically.
+ * Since we are not able to talk to multiple backends, we will use the newClassesAllowed
+ * setting to run the test if true, and skip if false.
+ */
+- (void)test_102_New_Collection_Allowed {
+  STFail(@"Azure does not support collections.");
+}
+
+/*!
+ * Tests that a backend with a locked schema will not allow adding a new Collection automatically.
+ * Since we are not able to talk to multiple backends, we will use the newClassesAllowed
+ * setting to run the test if false, and skip if true.
+ */
+- (void)test_103_New_Collection_Disallowed {
+  STFail(@"Azure does not support collections.");
+}
+
+/*!
+ * Tests the ability for a schemaless backend to learn a new Collection automatically.
  * Since we are not able to talk to multiple backends, we will use the newCollectionsAllowed
  * setting to run the test if true, and skip if false.
  */
-- (void)test_102_New_Class_Allowed {
+- (void)test_104_New_Class_Allowed {
   STFail(@"See report for further explaination.");
 }
 
@@ -189,7 +207,7 @@
  * Tests that a backend with a locked schema will not allow a new Collection
  * to be added by the client if disallowed by configuration.
  */
-- (void)test_103_New_Class_Disallowed {
+- (void)test_105_New_Class_Disallowed {
   
   @try {
     
@@ -224,24 +242,6 @@
   } @catch (NSException * e) {
     STAssertNil(e, @"test failed: %@", [e description]);
   }
-}
-
-/*!
- * Tests the ability for a schemaless backend to learn a new Collection automatically.
- * Since we are not able to talk to multiple backends, we will use the newClassesAllowed
- * setting to run the test if true, and skip if false.
- */
-- (void)test_104_New_Collection_Allowed {
-  STFail(@"Azure does not support collections.");
-}
-
-/*!
- * Tests that a backend with a locked schema will not allow adding a new Collection automatically.
- * Since we are not able to talk to multiple backends, we will use the newClassesAllowed
- * setting to run the test if false, and skip if true.
- */
-- (void)test_105_New_Collection_Disallowed {
-  STFail(@"Azure does not support collections.");
 }
 
 - (void)test_106_Local_Backend {
